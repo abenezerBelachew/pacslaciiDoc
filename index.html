@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
@@ -41,10 +42,60 @@
   background-color: #f1f1f1;
 }
 
+/* For the Similar Products part */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Div scrollmenu  */
+
+
+div.scrollmenu {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+  .div.scrollmenu div {
+    flex: 0 0 auto;
+  }
+
+
 </style>
 </head>
 <body>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -53,38 +104,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Pacslac II Visualization</a>
+      <a class="navbar-brand" href="#">Pacslac II Visualization Documentation</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Overview <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Software Design</a></li>
-            <li><a href="#">Architecture/Component Diagram</a></li>
-            <li><a href="#">UML Class Diagram</a></li>
-            <li><a href="#">Sequence Diagram</a></li>
-        </ul>
+        <li class="nav-item">
+          <a href="#softwareDesign">Overview </a>
         </li>
         <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project Management <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Project Management</a></li>
-              <li><a href="#">Story Map</a></li>
-              <li><a href="#">Project Plan</a></li>
-              <li><a href="#">Roles</a></li>
-          </ul>
+            <a href="#projectManagement">Project Management</a>
           </li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Requirements<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">User Stories</a></li>
-              <li><a href="#">Must Have</a></li>
-              <li><a href="#">Should Have</a></li>
-              <li><a href="#">Would Have</a></li>
-              <li><a href="#">Could Have</a></li>
-          </ul>
+            <a href="#requirements">Requirements</a>
           </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -94,6 +126,7 @@
     </div>
 </nav>
   
+<a id="softwareDesign"></a>
 <div class="container">
     <h2>Software Design</h2><br />
     <button class="collapsible">Software Design</button>
@@ -114,10 +147,11 @@
 
     <button class="collapsible">Sequence Diagram</button>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="sequence.png" style="height: 900px; width:70%; margin: 20px;" alt="Sequence Diagram">
     </div>
 
     <!-- ************************************ -->
+    <a id="projectManagement"></a>
     <h2>Project Management</h2><br />
     <button class="collapsible">Project Management</button>
     <div class="content">
@@ -135,12 +169,83 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
+    <button class="collapsible">Similar Products/Inspiration</button>
+    <div class="content scrollmenu">
+      
+      <div class="card" style="display: inline-block;">
+        <img src="sisense.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Sisense</h3>
+        <p>Business Intelligence software by Sisense, the industry leader in BI for complex data - easily prepare, analyze &amp; explore growing data from multiple sources.</p>
+        <p><a href="https://www.sisense.com/"><button>Visit</button></a></p>
+      </div>
+
+      <div class="card" style="display: inline-block;">
+        <img src="chartlist.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>CHARTIST.JS</h3>
+        <p>Create responsive, scalable and good looking charts with chartist.js. Chartlist.js is a javascript library that helps build responsive charts.</p>
+        <p><a href="https://gionkunz.github.io/chartist-js/"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="pyramid.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Population Pyramid</h3>
+        <p>This diagram shows the distribution of age groups in the United States over the last 150 years. Use the arrow keys to observe the changing population.</p>
+        <p><a href="https://bl.ocks.org/mbostock/4062085"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="calendarview.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Calendar View</h3>
+        <p>This chart shows daily changes of the Dow Jones Industrial Average from 1990 to 2010. Days the index went up are green; days the index went down are pink.</p>
+        <p><a href="https://observablehq.com/@d3/calendar-view"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="barchart.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Hierarchical Bar Chart</h3>
+        <p>Click a blue bar to drill down, or click the background to go back up. This bar graph is made using the d3.js library available online.</p>
+        <p><a href="https://observablehq.com/@d3/hierarchical-bar-chart"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="googlecalendarlike.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Google Calendar like Display</h3>
+        <p>A simple Google calendar like display to visualize temporal data. Use the forward and backwards buttons to move through the months.</p>
+        <p><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="cubsim.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Cubism.js</h3>
+        <p>Cubism.js is a D3 plugin for visualizing time series. Use Cubism to construct better realtime dashboards, pulling data from Graphite, Cube and other sources.</p>
+        <p><a href="http://square.github.io/cubism/"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="choropleth.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>Choropleth</h3>
+        <p>Choropleth makes use of the famous javascript library, d3.js for visualizing heatmaps. Unemployment rate by county, August 2016. Data: Bureau of Labor Statistics.</p>
+        <p><a href="https://observablehq.com/@d3/choropleth"><button>Visit</button></a></p>
+      </div>
+      <div class="card" style="display: inline-block;">
+        <img src="vissystem.png" 
+        alt="John" style="width:200px; height:150px;">
+        <h4>An Integrated Version of Security Monitor Vis System</h3>
+        <p>VIS components for a security system, to monitor the state and confirm the system's health running. All codes were wrote based on D3.js version 3.x.</p>
+        <p><a href="http://hijiangtao.github.io/ss-vis-component/"><button>Visit</button></a></p>
+      </div>
+    </div>
+    
     <button class="collapsible">Roles</button>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <!-- ************************************ -->
+    <a id="requirements"></a>
+
     <h2>Requirements</h2><br />
     <button class="collapsible">User Stories</button>
     <div class="content">
@@ -188,5 +293,6 @@
       });
     }
     </script>
+    <a id="bottom"></a>
 </body>
 </html>
