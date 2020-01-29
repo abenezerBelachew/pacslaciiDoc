@@ -1,930 +1,149 @@
-<!-- Added this -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-  <title>Pascal II Visualization | Documentation</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-  <link rel="shortcut icon" href="document.png" />
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-<style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-/* For the Similar Products part */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  margin: 20px;
-  text-align: center;
-  font-family: arial;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: #000000;
-  background-color: #ffffff;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-
-/* Div scrollmenu  */
-
-
-div.scrollmenu {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-  .div.scrollmenu div {
-    flex: 0 0 auto;
-  }
-
-
-</style>
-</head>
-<body>
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#" style="color: #ffffff;">Pacslac II Visualization Documentation</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a href="#overview">Overview </a>
-        </li>
-        <li class="nav-item">
-          <a href="#softwareDesign">Software Design</a>
-        </li>
-        <li class="dropdown">
-            <a href="#projectManagement">Project Management</a>
-          </li>
-          <li class="dropdown">
-            <a href="#requirements">Requirements</a>
-          </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"></span>By Team Fortress 2</a></li>
-      </ul>
-  </div>
-    </div>
-</nav>
-  
-<a id="overview"></a>
-<div class="container">
-    <h2>Overview</h2><br />
-    <button class="collapsible">Overview</button>
-    <div class="content">
-      <p>
-        The PACSLAC II Checklist is used to screen for pain in older adults who have dementia or other cognitive impairment with a limited ability to communicate. The tool should be used by a professional nurse.
-        We will be visualizing the data we receive from this assessments in a user-friendly way so users of our project can better understand their patients. 
-      </p>
-    </div>
-
-    <button class="collapsible">Glossary</button>
-    <div class="content">
-      <strong>PACSLAC II</strong> - Pain Assessment Checklist for Seniors with Limited Ability to Communicate II<br />
-      <strong>User</strong> - User can be the patient, caretaker or the person responsible for conducting research on pain levels across different groups.<br />
-      <strong>Patients</strong> - Seniors with limited ability to communicate<br />
-      <strong>Heatmap</strong> - representation of data in form of a map in which data values are represented as colours<br />
-      <strong>Heatmap calendar</strong> - A simple line graph, where the horizontal axis plots the time and the vertical axis plots the measured variable. The data is displayed in a format of heatmap.<br />
-      <strong>Institution</strong> - <br />
-      <strong>Health-service zone</strong> -<br /> 
-      <strong>Region</strong> - <br />
-      <strong>Pain level</strong> - A measurement(number) of patient’s pain intensity<br />
-    </div>
-
-
-    <button class="collapsible">Storyboarding</button>
-    <div class="content">
-        <img src="StoryBoard.png" style="height: 900px; width:70%; margin: 20px;">
-
-
-       <h4> References:</h4>
-
-        UI mock-up is made by using figma. <br />
-
-        Home Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a><br />
-        Triangle Icons made by <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Gender Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Map Icons made by <a href="https://www.flaticon.com/authors/turkkub">turkkub</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Bar Chart Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Line Graph Icons made by <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Calendar Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a><br />
-        Most images are found from pacslacii presentation slide.<br />
-        Canada heatmap is from <a href="https://www.regimage.org/no-fly-zone-drone-canada-map/">Regimage.org</a><br />
-        Single line chart is from <a href="https://www.ielts-exam.net/preparing/Writing_task_one_single_line_graph/208/">ielts-exam</a><br />
-
-      </div>
-
-
-      <!-- User Stories -->
-      <button class="collapsible">User Stories</button>
-      <div class="content">
-  <ol type="number">      
-  <li><strong>As a user,  I want to see a heatmap detailing average pain level of patients at a particular time, so that I can look for patterns.
-  </strong><br />&emsp; Acceptance Tests:
-  Heatmap loads on the screen.
-  Map loads according to the correct average values for regions.
-  Has instructions how to read it.
-  <li><strong>As a user,  I want to hover over a region on a heatmap so that I may see average numeric pain scores for that region.
-  </strong><br />&emsp; Acceptance Tests:
-  The screen responds on hover within a second.
-  The correct average pain score is displayed for a region.
-  <li><strong>As a user,  I want to use a slider on a heatmap so that I may see how the pain scores change over time.
-    </strong><br />&emsp; Acceptance Tests:
-  The slider moves in response to the user mouse.
-  The heatmap changes with slider movement.
-  The range for the slider is an accurate representation of the ‘date’ data available.
-  <li><strong>As a user,  I want to switch the heatmap between province view, city view, and region view so that I may see how they compare. 
-  </strong><br />&emsp; Acceptance Tests:
-  Indicator with available view options is evident.
-  The map displays province view if the province view is selected. Similar for every other view offered.
-  The map zooms into the selected region.
-  <li><strong>As a user,  I want to see a heatmap detailing the pain level mode of patients at a particular time so that I may know at what pain-level most patients are at any point in time.
-  </strong><br />&emsp; Acceptance Tests:
-  The correct mode “heat” level is displayed.
-  The time of the displayed map is clearly displayed on the screen.
-  The map shows the country.
-  <li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the mode pain score for that institution.
-  </strong><br />&emsp; Acceptance Tests:
-  The map responds to hover.
-  Institutions are obvious on the screen (as pins, or circles).
-  The correct mode is displayed.
-  <li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the number of patients in that institution.
-  </strong><br />&emsp; Acceptance Tests:
-  The map responds to hover.
-  The correct number of patients is displayed.
-  <li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), time of day assessed (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-    </strong><br />&emsp; Acceptance Tests:
-  The colours of the bar graph are different but complement each other.
-  The axes are clearly labeled.
-  The correct values are displayed for the columns, testing maybe only two.
-  No values overlapping over each other anywhere.
-  Has a title.
-  Has a legend.
-  Has instructions on how to read it.
-  Loads on the screen.
-  <li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), day (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-  </strong><br />&emsp; Acceptance Tests:
-  The graph is nice to look at.
-  Has nice colour overlap.
-  The correct values are displayed for each column.
-  Axis values aren’t overlapping each other.
-  Has a title.
-  Has a legend.
-  Has instructions on how to read it.
-  <li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), month (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-  </strong><br />&emsp; Acceptance Tests:
-  Graph is nice to look at.
-  Has nice colour overlap.
-  The correct values are displayed for each column.
-  Axis values aren’t overlapping.
-  Has a title.
-  Has a legend.
-  Has instructions on how to read it.
-  <li><strong>As a user,  I want to interact with the overlapping bar-graph by pressing the left and right keys OR using a slider so that I may see more data.
-    </strong><br />&emsp; Acceptance Tests:
-  The graph responds to key presses.
-  The graph has a slider.
-  The graph responds to slider movement.
-  As a colourblind user, I want to see all the colours on any of the visualizations.
-  </strong><br />&emsp; Acceptance Tests:
-  All visualizations use a colourblind friendly colour palette. 
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the pain level of one patient day by day so that I may see how the pain level of a patient changed over time.
-  </strong><br />&emsp; Acceptance Tests:
-  The calendar loads. 
-  The correct colours are displayed for each day.
-  Legend for what the colours mean.
-  Has a title.
-  <li><strong>As a user,  I want to see a heatmap calendars depicting the pain level of one patient month by month so that I can see how the pain level changed over a different time granularity.
-    </strong><br />&emsp; Acceptance Tests:
-  The calendars load and display consecutively one after the other.
-  Has a title, and a legend for what the colours mean.
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of one patient throughout a day so that I can see how the pain level changed over another time granularity.
-    </strong><br />&emsp; Acceptance Tests:
-  Data is displayed in a concise way.
-  Has a title and colour legend.
-  The correct colours are displayed for their respective values.
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in an institution throughout a day so that I may see what the overall pain level change for this group of patients.
-    </strong><br />&emsp; Acceptance Tests:
-  The average calculated correctly.
-  Data is grouped properly.
-  The colours correspond their numeric values.
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in a health-service zone throughout a day so that I can see the overall pain level change in this group of patients.
-  </strong><br />&emsp; Acceptance Tests:
-  The average calculated correctly.
-  Data is grouped properly.
-  Axes clearly labeled.
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of one patient throughout a day so I may see what pain level a patient is most often at throughout the day.
-  </strong><br />&emsp; Acceptance Tests:
-  The mode is calculated correctly.
-  Colour legend.
-  Title.
-  <li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of patients day to day of an institution so that I may see what level patients of an institution are most often at.
-    </strong><br />&emsp; Acceptance Tests:
-  The correct mode is calculated.
-  Only the values of an institution are calculated.
-  <li><strong>As a user,  I want to see a heatmap that shows the number of patients per each pain-level quartile in each institution and overall Canada so that I may see aggregate data.
-      </strong><br />&emsp; Acceptance Tests:
-  The quartiles are grouped appropriately.
-  The correct number is displayed.
-  <li><strong>As a user,  I want to see pie-charts in a calendar format of patients improving/deteriorating (as indicated with a regression line over their measurements) over time at an institution so that I may see an overview of all patients improving/deteriorating within a time period.
-    </strong><br />&emsp; Acceptance Tests:
-  Pie charts have complementary colours.
-  The calendar loads.
-  <li><strong>As a user,  I want to see an overlapping graph detailing the levels of pain so that I may see the distribution of pain levels across age groups.
-    </strong><br />&emsp; Acceptance Tests:
-  The data for the groups is accurate.
-  The graph colours are well chosen for visibility.
-  The axes are good scaled.
-  Has colour legend.
-  <li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a health-service zone where each bar is coloured by pain level mode so that I may explore indicators of all patients.
-    </strong><br />&emsp; Acceptance Tests:
-  Accurate data. 
-  Axes clearly labeled.
-  Has title.
-  <li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a health-service zone so that I may continue to explore the indicators of all patients in an institution. 
-    </strong><br />&emsp; Acceptance Tests:
-  Accurate data.
-  <li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a province where each bar is coloured by pain level mode so that I can explore indicators of all patients in a province.
-    </strong><br />&emsp; Acceptance Tests:
-  Accurate data. 
-  Axes clearly labeled.
-  Has title.
-  <li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a province so that I may see any general trends that may be happening. 
-      </strong><br />&emsp; Acceptance Tests:
-  Displays accurate data.
-  The colours are appropriate.
-  <li><strong>As a user,  I want to see a line graph of each patient’s improvement/deterioration so that I may see any possible trends.
-    </strong><br />&emsp; Acceptance Tests:
-  Displays accurate data.
-  Every aspect is clearly visible.
-  Axes are accurate and not misleading.
-  The graph loads.
-  <li><strong>As a user,  I want to see a line graph of each institution’s improvement/deterioration so that I can see any trends if they’re happening.
-  </strong><br />&emsp; Acceptance Tests:
-  Displays accurate data.
-  The graph loads.
-  <li><strong>As a user,  I want to see a line graph of each province’s improvement/deterioration so that I may see how a province is doing.
-    </strong><br />&emsp; Acceptance Tests:
-  Displays accurate data.
-  The graph loads.
-  <li><strong>As a user,  I want to see a line graph of each health-zone’s improvement/deterioration so that I may evaluate how the health-zone is doing.
-    </strong><br />&emsp; Acceptance Tests:
-  Displays accurate data.
-  The graph loads.
-  <li><strong>As a user,  I want the UI to be intuitive to use, following general principles of navigation so that I don’t have to spend lots of time learning to interact with it
-    </strong><br />&emsp; Acceptance Tests:
-  The navigation is on the left.
-  Clicking on a button will change the page to load the visualization.
-  <li><strong>As a user,  I want the visualizations to load within 5 seconds so that I may have a good experience.
-    </strong><br />&emsp; Acceptance Tests:
-  Visualizations load within 5 seconds.
-  Able to navigate mid load.
-  If a user changes his mind about viewing a certain visualization, the system loads the new visualization rather than the old one.
-  <li><strong>As a user,  I want to follow the 3-click rule to get to any visualization, so that I don’t get lost on the webpage.
-  </strong><br />&emsp; Acceptance Tests:
-  Follows the 3-click rule.
-  As a developer, I want to integrate a front-end React framework with a django back-end.
-    </strong><br />&emsp; Acceptance Tests:
-  Uses Django back-end.
-  Uses React.
-  As a developer, I want the visualizations mobile-friendly so that users get the best experience.
-    </strong><br />&emsp; Acceptance Tests:
-  Each visualization looks good on mobile.
-  Can interact with each visualization on mobile.
-  <li><strong>As a user,  I want to be able to register a new account with an email and a password, so that I may log in.
-  </strong><br />&emsp; Acceptance Tests:
-  The password is a strong password.
-  Trying to log in with an unregistered password returns an error.
-  
-  </ol>
-  </div>
-  <!-- End of User stories -->
-
-  <!-- Similar Products -->
-  <button class="collapsible">Similar Products/Inspiration</button>
-    <div class="content scrollmenu">
-      
-      <div class="card" style="display: inline-block;">
-        <img src="sisense.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Sisense</h3>
-        <p>Business Intelligence software by Sisense, the industry leader in BI for complex data - easily prepare, analyze &amp; explore growing data from multiple sources.</p>
-        <p><a href="https://www.sisense.com/"><button>Visit</button></a></p>
-      </div>
-
-      <div class="card" style="display: inline-block;">
-        <img src="chartlist.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>CHARTIST.JS</h3>
-        <p>Create responsive, scalable and good looking charts with chartist.js. Chartlist.js is a javascript library that helps build responsive charts.</p>
-        <p><a href="https://gionkunz.github.io/chartist-js/"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="pyramid.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Population Pyramid</h3>
-        <p>This diagram shows the distribution of age groups in the United States over the last 150 years. Use the arrow keys to observe the changing population.</p>
-        <p><a href="https://bl.ocks.org/mbostock/4062085"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="calendarview.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Calendar View</h3>
-        <p>This chart shows daily changes of the Dow Jones Industrial Average from 1990 to 2010. Days the index went up are green; days the index went down are pink.</p>
-        <p><a href="https://observablehq.com/@d3/calendar-view"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="barchart.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Hierarchical Bar Chart</h3>
-        <p>Click a blue bar to drill down, or click the background to go back up. This bar graph is made using the d3.js library available online.</p>
-        <p><a href="https://observablehq.com/@d3/hierarchical-bar-chart"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="googlecalendarlike.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Google Calendar like Display</h3>
-        <p>A simple Google calendar like display to visualize temporal data. Use the forward and backwards buttons to move through the months.</p>
-        <p><a href="http://bl.ocks.org/chaitanyagurrapu/6007521"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="cubsim.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Cubism.js</h3>
-        <p>Cubism.js is a D3 plugin for visualizing time series. Use Cubism to construct better realtime dashboards, pulling data from Graphite, Cube and other sources.</p>
-        <p><a href="http://square.github.io/cubism/"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="choropleth.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>Choropleth</h3>
-        <p>Choropleth makes use of the famous javascript library, d3.js for visualizing heatmaps. Unemployment rate by county, August 2016. Data: Bureau of Labor Statistics.</p>
-        <p><a href="https://observablehq.com/@d3/choropleth"><button>Visit</button></a></p>
-      </div>
-      <div class="card" style="display: inline-block;">
-        <img src="vissystem.png" 
-        alt="John" style="width:200px; height:150px;">
-        <h4>An Integrated Version of Security Monitor Vis System</h3>
-        <p>VIS components for a security system, to monitor the state and confirm the system's health running. All codes were wrote based on D3.js version 3.x.</p>
-        <p><a href="http://hijiangtao.github.io/ss-vis-component/"><button>Visit</button></a></p>
-      </div>
-    </div>
-    <!-- End of similar products -->
-
-
-    <button class="collapsible">Technical Resources</button>
-    <div class="content">
-      <strong>
-        <a href="https://reactjs.org/">React</a><br />
-        <a href="https://www.djangoproject.com/">Django</a> (and <a href="https://www.django-rest-framework.org/">Django Rest Framework</a>)<br />
-        <a href="https://www.cybera.ca/">Cybera</a><br />
-        <a href="https://d3js.org/">D3.js</a><br />
-      </strong>
-    </div>
-
-
-    <a id="softwareDesign"></a>
-    <h2>Software Design</h2><br />
-    <button class="collapsible">Architecture/Component Diagram</button>
-    <div class="content">
-      <img src="UMLComponentDiagram.png" style="height: 900px; width:100%; margin: 20px;"/>
-    </div>
-
-    <button class="collapsible">UML Class Diagram</button>
-    <div class="content">
-      <img src="UMLClassDiagram.png" style="height: 900px; width:70%; margin: 20px;" alt="UML Class Diagram">
-    </div>
-
-    <button class="collapsible">Sequence Diagram</button>
-    <div class="content">
-        <img src="sequence.png" style="height: 900px; width:70%; margin: 20px;" alt="Sequence Diagram">
-    </div>
-   
-
-
-    <!-- ************************************ -->
-    <a id="projectManagement"></a>
-    <h2>Project Management</h2><br />
+    <title>PacslacII Visualization | Docs</title>
     
-    <button class="collapsible">Project Plan</button>
-    <div class="content">
-      <h3>Sprint One</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Rubric Description</th>
-            <th scope="col">Task To-Do</th>
-            <th scope="col">Assigned To</th>
-            <th scope="col">Date To Complete By</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Requirements Document</td>
-            <td>Glossary</td>
-            <td>All Members</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Storyboard</td>
-            <td>Dan</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>User Stories</td>
-            <td>All Members, Eenna</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-
-          <tr>
-            <td>Design Document</td>
-            <td>Component Diagram</td>
-            <td>Dan</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>UML Class Diagram</td>
-            <td>Abenezer</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Sequence Diagram</td>
-            <td>Jason</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-          <tr>
-            <td>Project Management Document</td>
-            <td>Storymap</td>
-            <td>Eenna</td>
-            <td>Jan 26, 2020</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      <!-- Sprint 2 Table -->
-      <h3>Sprint Two</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Rubric Description</th>
-            <th scope="col">Task To-Do</th>
-            <th scope="col">Assigned To</th>
-            <th scope="col">Date To Complete By</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Requirements Document</td>
-            <td>Final Version User Stories</td>
-            <td>All Members</td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Minimum Viable Prototype Specification</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Design Document</td>
-            <td>Update Design Document</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-
-          <tr>
-            <td>Implementation Progress</td>
-            <td>Implementation Progress</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Address Feedback</td>
-            <td>Address Feedback</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Plans For Next Week</td>
-            <td>Update Plan for Sprint 3</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Code Style and Readability</td>
-            <td>Check Over To See If Code Follows Conventions</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Document Refined</td>
-            <td>Re-Evaluate</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>Tasks and Task Assignments</td>
-            <td>Requirements</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-          <tr>
-            <td>System Runs on Deployment Server</td>
-            <td>Run System on Deployment Server</td>
-            <td></td>
-            <td>Feb 23, 2020</td>
-          </tr>
-
-        </tbody>
-      </table>
-
-       <!-- Sprint 3 Table -->
-       <h3>Sprint Three</h3>
-       <table class="table">
-         <thead>
-           <tr>
-             <th scope="col">Rubric Description</th>
-             <th scope="col">Task To-Do</th>
-             <th scope="col">Assigned To</th>
-             <th scope="col">Date To Complete By</th>
-           </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <td>70% Of Requirements</td>
-             <td>Keep Track of How Many Requirements are Done</td>
-             <td></td>
-             <td>Mar 15, 2020</td>
-           </tr> 
-         </tbody>
-       </table>
-
-        <!-- Sprint 4 Table -->
-        <h3>Sprint Four</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Rubric Description</th>
-              <th scope="col">Task To-Do</th>
-              <th scope="col">Assigned To</th>
-              <th scope="col">Date To Complete By</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>All Requirements Complete</td>
-              <td>System is Usable</td>
-              <td></td>
-              <td>Apr 2, 2020</td>
-            </tr> 
-            <tr>
-              <td>System is Usable</td>
-              <td></td>
-              <td></td>
-              <td>Apr 2, 2020</td>
-            </tr> 
-          </tbody>
-        </table>
-
-    </div>
-   
-    <button class="collapsible">Story Map</button>
-    <div class="content">
-      <img src="Storymap.png" style="height: 900px; width:70%; margin: 20px;">
-    </div>
-
-    <button class="collapsible">UI</button>
-    <div class="content">
-      <embed src="SeperateScreen.pdf" width="100%" height="2100px" />
-    </div>
-
-    <button class="collapsible">Roles</button>
-    <div class="content">
-      <p>
-        <h4>Backend Development</h4>
-        <ul>
-          <li>Abenezer</li>
-          <li>Jason</li>
-        </ul>
-        <h4>Frontend Development</h4>
-        <ul>
-          <li>Dan Zhang</li>
-          <li>Eenna</li>
-        </ul>
-        <h4>"Floaters"</h4>
-        <ul>
-          <li>Everyone</li>
-        </ul>
-      </p>
-    </div>
-
-    <!-- ************************************ -->
-    <a id="requirements"></a>
-
-    <h2>Requirements</h2><br />
-    <button class="collapsible">User Stories</button>
-    <div class="content">
-<ol type="number">      
-<li><strong>As a user,  I want to see a heatmap detailing average pain level of patients at a particular time, so that I can look for patterns.
-</strong><br />&emsp; Acceptance Tests:
-Heatmap loads on the screen.
-Map loads according to the correct average values for regions.
-Has instructions how to read it.
-<li><strong>As a user,  I want to hover over a region on a heatmap so that I may see average numeric pain scores for that region.
-</strong><br />&emsp; Acceptance Tests:
-The screen responds on hover within a second.
-The correct average pain score is displayed for a region.
-<li><strong>As a user,  I want to use a slider on a heatmap so that I may see how the pain scores change over time.
-	</strong><br />&emsp; Acceptance Tests:
-The slider moves in response to the user mouse.
-The heatmap changes with slider movement.
-The range for the slider is an accurate representation of the ‘date’ data available.
-<li><strong>As a user,  I want to switch the heatmap between province view, city view, and region view so that I may see how they compare. 
-</strong><br />&emsp; Acceptance Tests:
-Indicator with available view options is evident.
-The map displays province view if the province view is selected. Similar for every other view offered.
-The map zooms into the selected region.
-<li><strong>As a user,  I want to see a heatmap detailing the pain level mode of patients at a particular time so that I may know at what pain-level most patients are at any point in time.
-</strong><br />&emsp; Acceptance Tests:
-The correct mode “heat” level is displayed.
-The time of the displayed map is clearly displayed on the screen.
-The map shows the country.
-<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the mode pain score for that institution.
-</strong><br />&emsp; Acceptance Tests:
-The map responds to hover.
-Institutions are obvious on the screen (as pins, or circles).
-The correct mode is displayed.
-<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the number of patients in that institution.
-</strong><br />&emsp; Acceptance Tests:
-The map responds to hover.
-The correct number of patients is displayed.
-<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), time of day assessed (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-	</strong><br />&emsp; Acceptance Tests:
-The colours of the bar graph are different but complement each other.
-The axes are clearly labeled.
-The correct values are displayed for the columns, testing maybe only two.
-No values overlapping over each other anywhere.
-Has a title.
-Has a legend.
-Has instructions on how to read it.
-Loads on the screen.
-<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), day (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-</strong><br />&emsp; Acceptance Tests:
-The graph is nice to look at.
-Has nice colour overlap.
-The correct values are displayed for each column.
-Axis values aren’t overlapping each other.
-Has a title.
-Has a legend.
-Has instructions on how to read it.
-<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), month (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-</strong><br />&emsp; Acceptance Tests:
-Graph is nice to look at.
-Has nice colour overlap.
-The correct values are displayed for each column.
-Axis values aren’t overlapping.
-Has a title.
-Has a legend.
-Has instructions on how to read it.
-<li><strong>As a user,  I want to interact with the overlapping bar-graph by pressing the left and right keys OR using a slider so that I may see more data.
-	</strong><br />&emsp; Acceptance Tests:
-The graph responds to key presses.
-The graph has a slider.
-The graph responds to slider movement.
-As a colourblind user, I want to see all the colours on any of the visualizations.
-</strong><br />&emsp; Acceptance Tests:
-All visualizations use a colourblind friendly colour palette. 
-<li><strong>As a user,  I want to see a heatmap calendar depicting the pain level of one patient day by day so that I may see how the pain level of a patient changed over time.
-</strong><br />&emsp; Acceptance Tests:
-The calendar loads. 
-The correct colours are displayed for each day.
-Legend for what the colours mean.
-Has a title.
-<li><strong>As a user,  I want to see a heatmap calendars depicting the pain level of one patient month by month so that I can see how the pain level changed over a different time granularity.
-	</strong><br />&emsp; Acceptance Tests:
-The calendars load and display consecutively one after the other.
-Has a title, and a legend for what the colours mean.
-<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of one patient throughout a day so that I can see how the pain level changed over another time granularity.
-	</strong><br />&emsp; Acceptance Tests:
-Data is displayed in a concise way.
-Has a title and colour legend.
-The correct colours are displayed for their respective values.
-<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in an institution throughout a day so that I may see what the overall pain level change for this group of patients.
-	</strong><br />&emsp; Acceptance Tests:
-The average calculated correctly.
-Data is grouped properly.
-The colours correspond their numeric values.
-<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in a health-service zone throughout a day so that I can see the overall pain level change in this group of patients.
-</strong><br />&emsp; Acceptance Tests:
-The average calculated correctly.
-Data is grouped properly.
-Axes clearly labeled.
-<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of one patient throughout a day so I may see what pain level a patient is most often at throughout the day.
-</strong><br />&emsp; Acceptance Tests:
-The mode is calculated correctly.
-Colour legend.
-Title.
-<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of patients day to day of an institution so that I may see what level patients of an institution are most often at.
-	</strong><br />&emsp; Acceptance Tests:
-The correct mode is calculated.
-Only the values of an institution are calculated.
-<li><strong>As a user,  I want to see a heatmap that shows the number of patients per each pain-level quartile in each institution and overall Canada so that I may see aggregate data.
-		</strong><br />&emsp; Acceptance Tests:
-The quartiles are grouped appropriately.
-The correct number is displayed.
-<li><strong>As a user,  I want to see pie-charts in a calendar format of patients improving/deteriorating (as indicated with a regression line over their measurements) over time at an institution so that I may see an overview of all patients improving/deteriorating within a time period.
-	</strong><br />&emsp; Acceptance Tests:
-Pie charts have complementary colours.
-The calendar loads.
-<li><strong>As a user,  I want to see an overlapping graph detailing the levels of pain so that I may see the distribution of pain levels across age groups.
-	</strong><br />&emsp; Acceptance Tests:
-The data for the groups is accurate.
-The graph colours are well chosen for visibility.
-The axes are good scaled.
-Has colour legend.
-<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a health-service zone where each bar is coloured by pain level mode so that I may explore indicators of all patients.
-	</strong><br />&emsp; Acceptance Tests:
-Accurate data. 
-Axes clearly labeled.
-Has title.
-<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a health-service zone so that I may continue to explore the indicators of all patients in an institution. 
-	</strong><br />&emsp; Acceptance Tests:
-Accurate data.
-<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a province where each bar is coloured by pain level mode so that I can explore indicators of all patients in a province.
-	</strong><br />&emsp; Acceptance Tests:
-Accurate data. 
-Axes clearly labeled.
-Has title.
-<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a province so that I may see any general trends that may be happening. 
-		</strong><br />&emsp; Acceptance Tests:
-Displays accurate data.
-The colours are appropriate.
-<li><strong>As a user,  I want to see a line graph of each patient’s improvement/deterioration so that I may see any possible trends.
-	</strong><br />&emsp; Acceptance Tests:
-Displays accurate data.
-Every aspect is clearly visible.
-Axes are accurate and not misleading.
-The graph loads.
-<li><strong>As a user,  I want to see a line graph of each institution’s improvement/deterioration so that I can see any trends if they’re happening.
-</strong><br />&emsp; Acceptance Tests:
-Displays accurate data.
-The graph loads.
-<li><strong>As a user,  I want to see a line graph of each province’s improvement/deterioration so that I may see how a province is doing.
-	</strong><br />&emsp; Acceptance Tests:
-Displays accurate data.
-The graph loads.
-<li><strong>As a user,  I want to see a line graph of each health-zone’s improvement/deterioration so that I may evaluate how the health-zone is doing.
-	</strong><br />&emsp; Acceptance Tests:
-Displays accurate data.
-The graph loads.
-<li><strong>As a user,  I want the UI to be intuitive to use, following general principles of navigation so that I don’t have to spend lots of time learning to interact with it
-	</strong><br />&emsp; Acceptance Tests:
-The navigation is on the left.
-Clicking on a button will change the page to load the visualization.
-<li><strong>As a user,  I want the visualizations to load within 5 seconds so that I may have a good experience.
-	</strong><br />&emsp; Acceptance Tests:
-Visualizations load within 5 seconds.
-Able to navigate mid load.
-If a user changes his mind about viewing a certain visualization, the system loads the new visualization rather than the old one.
-<li><strong>As a user,  I want to follow the 3-click rule to get to any visualization, so that I don’t get lost on the webpage.
-</strong><br />&emsp; Acceptance Tests:
-Follows the 3-click rule.
-As a developer, I want to integrate a front-end React framework with a django back-end.
-	</strong><br />&emsp; Acceptance Tests:
-Uses Django back-end.
-Uses React.
-As a developer, I want the visualizations mobile-friendly so that users get the best experience.
-	</strong><br />&emsp; Acceptance Tests:
-Each visualization looks good on mobile.
-Can interact with each visualization on mobile.
-<li><strong>As a user,  I want to be able to register a new account with an email and a password, so that I may log in.
-</strong><br />&emsp; Acceptance Tests:
-The password is a strong password.
-Trying to log in with an unregistered password returns an error.
-
-</ol>
-    </div>
-
-
-    <button class="collapsible">Must Have</button>
-    <div class="content">
-      <p>
-        <strong>User Stories (1-7)</strong>
-      </p>
-    </div>
-
-    <button class="collapsible">Should Have</button>
-    <div class="content">
-      <p>
-        <strong>User Stories (8-21)</strong>
-      </p>
-        </div>
-
-    <button class="collapsible">Would Have</button>
-    <div class="content">
-      <p>
-        <strong>User Stories (22-30)</strong>
-      </p>
-    </div>
-
-    <button class="collapsible">Could Have</button>
-    <div class="content">
-      <p>
-        <strong>User Stories (31-33)</strong>
-      </p>  
-    </div>
-</div>
-
-
-
-
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	
+	<!-- Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+	<link rel="shortcut icon" href="icon.png"> 
     
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
-    <a id="bottom"></a>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body>    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">PacslacII Visualization<i class="fas fa-stethoscope"></i><span class="text-alt"> | Docs</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	
+					
+		            <a href="https://github.com/UAlberta-CMPUT401/PacslacII-Visualization" class="btn btn-primary d-none d-lg-flex">
+						<i class="fab fa-github fa-fw"></i>Github
+					</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    
+    <div class="page-content">
+	    <div class="container">
+		    <div class="docs-overview py-5">
+			    <div class="row justify-content-center">
+				    <div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder mr-2">
+								        <i class="fas fa-map-signs"></i>
+							        </span><!--//card-icon-holder-->
+							        <span class="card-title-text">Overview</span>
+							    </h5>
+							    <div class="card-text">
+								    The PACSLAC II Checklist is used to screen for pain in older adults who have dementia or other cognitive impairment with a limited ability to communicate. 
+							    </div>
+							    <a class="card-link-mask" href="docs-page.html#overview"></a>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+				    <div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder mr-2">
+								        <i class="fas fa-arrow-down"></i>
+							        </span><!--//card-icon-holder-->
+							        <span class="card-title-text">Software Design</span>
+							    </h5>
+							    <div class="card-text">
+								    This page includes a short description of the overall architecture style of the system, its high-level system components, and their logical (what data they exchange) and control (how they invoke each other) dependencies.
+							    </div>
+							    <a class="card-link-mask" href="docs-page.html#software-design"></a>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+				    <div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder mr-2">
+								        <i class="fas fa-tasks fa-fw"></i>
+							        </span><!--//card-icon-holder-->
+							        <span class="card-title-text">Project Management</span>
+							    </h5>
+							    <div class="card-text">
+									This page provides a general overview of the assigned tasks and roles for the duration of four sprints (subject to change).						    
+								</div>
+							    <a class="card-link-mask" href="docs-page.html#project-management"></a>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+				    <div class="col-12 col-lg-4 py-3">
+					    <div class="card shadow-sm">
+						    <div class="card-body">
+							    <h5 class="card-title mb-3">
+								    <span class="theme-icon-holder card-icon-holder mr-2">
+								        <i class="fas fa-asterisk fa-fw"></i>
+							        </span><!--//card-icon-holder-->
+							        <span class="card-title-text">Requirements</span>
+							    </h5>
+							    <div class="card-text">
+								    This page provides the User Stories, Must Have, Should Have, Would Have and Could Haves of the project					    
+								</div>
+							    <a class="card-link-mask" href="docs-page.html#requirements"></a>
+						    </div><!--//card-body-->
+					    </div><!--//card-->
+				    </div><!--//col-->
+
+
+			    </div><!--//row-->
+		    </div><!--//container-->
+		</div><!--//container-->
+    </div><!--//page-content-->
+
+
+
+               
+    
+    <footer class="footer">
+
+	    <div class="footer-bottom text-center py-5">
+		    
+
+	        
+	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small><br />
+			<small class="copyright">Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></small>
+		
+		</div>
+	        
+	    </div>
+	    
+    </footer>
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+
 </body>
-</html>
+</html> 
+

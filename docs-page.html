@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>PacslacII Visualization | Docs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	
+	<!-- Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+	<link rel="shortcut icon" href="assets/images/coderdocs-logo.svg"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">PacslacII Visualization<i class="fas fa-stethoscope"></i><span class="text-alt"> | Docs</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+	
+					
+		            <a href="https://github.com/UAlberta-CMPUT401/PacslacII-Visualization" class="btn btn-primary d-none d-lg-flex"><i class="fab fa-github fa-fw"></i>Github</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#overview"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Overview</a></li>
+					
+					<li class="nav-item"><a class="nav-link scrollto" href="#glossary">Glossary</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#storyboarding">Storyboarding</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#userstories1">User Stories</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#similarproduct">Similar Products/Inspiration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#technicalresources">Technical Resources</a></li>
+					
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#software-design"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Software Design</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#componentdiagram">Architecture/Componenet Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#umlclassdiagram">UML Class Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#sequencediagram">Sequence Diagram</a></li>
+					
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#project-management"><span class="theme-icon-holder mr-2"><i class="fas fa-tasks fa-fw"></i></span>Project Management</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#projectplan">Project Plan</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#storymap">Story Map</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#userinterface">User Interface</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#roles">Roles</a></li>
+					
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#requirements"><span class="theme-icon-holder mr-2"><i class="fas fa-asterisk fa-fw"></i></span>Requirements</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#userstories">User Stories</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#musthave">Must Have</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#shouldhave">Should Have</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#wouldhave">Would Have</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#couldhave">Could Have</a></li>
+					
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="overview">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Overview <span class="docs-time">Last updated: Januray 20<sup>th</sup>, 2020</span></h1>
+					    <section class="docs-intro">
+							<p>The PACSLAC II Checklist is used to screen for pain in older adults who have dementia or other cognitive impairment with a limited ability to communicate.</p>
+						</section><!--//docs-intro-->
+						
+						
+											
+				    </header>
+				    <section class="docs-section" id="glossary">
+						<h2 class="section-heading">Glossary</h2>
+						<p>Definition of the terms used throughout the project </p>
+						<ul>
+						    <li><strong class="mr-1">PACSLAC II:</strong> Pain Assessment Checklist for Seniors with Limited Ability to Communicate II</li>
+						    <li><strong class="mr-1">User:</strong> can be the patient, caretaker or the person responsible for conducting research on pain levels across different groups. </li>
+							<li><strong class="mr-1">Patients:</strong> seniors with limited ability to communicate</li>
+							<li><strong class="mr-1">Heatmap:</strong> representation of data in form of a map in which data values are represented as colours</li>
+							<li><strong class="mr-1">Heatmap Calendar:</strong> a simple line graph, where the horizontal axis plots the time and the vertical axis plots the measured variable. The data is displayed in a format of heatmap.</li>
+							<li><strong class="mr-1">Institution:</strong> each hospital or care-home.</li>
+							<li><strong class="mr-1">Health-service zone:</strong>  the way provinces set up their service zones</li>
+							<li><strong class="mr-1">Region:</strong> physiographic regions of Canada.</li>
+							<li><strong class="mr-1">Pain Level:</strong> a measurement(number) of patient’s pain intensity</li>
+														<hr />
+						</ul>
+					
+                        
+                        
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="storyboarding">
+						<h2 class="section-heading">Storyboarding</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/features/story_board.png" data-title="StoryBoard"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/story_board.png" alt="" style="width: 100%;"></a>
+						</figure>
+
+						
+						
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="userstories1">
+						<h2 class="section-heading">User Stories</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="similarproduct">
+						<h2 class="section-heading">Similar Product</h2>
+						
+						<h5>Similar Products/Inspiration:</h5>
+						<div class="table-responsive my-4">
+							<table class="table table-bordered">
+								<tbody>
+								    <tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="https://www.sisense.com/">Sisense</a></th>
+									    <td>Business Intelligence software by Sisense, the industry leader in BI for complex data - easily prepare, analyze &amp; explore growing data from multiple sources.</td>
+									</tr>
+
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="https://startbootstrap.com/themes/sb-admin-2/">SB Admin 2</a></th>
+									    <td>A free Bootstrap 4 admin theme built with HTML/CSS and a modern development workflow environment ready to use to build your next dashboard or web application</td>
+									</tr>
+
+									<tr>
+									      <th class="theme-bg-light"><a class="theme-link" href="https://gionkunz.github.io/chartist-js/">Chartlist</a></th>
+									      <td>Create responsive, scalable and good looking charts with chartist.js. Chartlist.js is a javascript library that helps build responsive charts.</td>
+									</tr>
+									
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="https://bl.ocks.org/mbostock/4062085">Population Pyramid</a></th>
+									    <td>This diagram shows the distribution of age groups in the United States over the last 150 years. Use the arrow keys to observe the changing population. </td>
+									</tr>
+									
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="https://observablehq.com/@d3/calendar-view">Calendar View</a></th>
+									    <td>This chart shows daily changes of the Dow Jones Industrial Average from 1990 to 2010. Days the index went up are green; days the index went down are pink.</td>
+									</tr>
+
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="http://bl.ocks.org/chaitanyagurrapu/6007521">Google Calendar-like Display</a></th>
+									    <td>A simple Google calendar like display to visualize temporal data. Use the forward and backwards buttons to move through the months.</td>
+									</tr>
+
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="http://square.github.io/cubism/">Cubsim</a></th>
+									    <td>Cubism.js is a D3 plugin for visualizing time series. Use Cubism to construct better realtime dashboards, pulling data from Graphite, Cube and other sources.</td>
+									</tr>
+
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="https://observablehq.com/@d3/choropleth">Choropleth</a></th>
+									    <td>Choropleth makes use of the famous javascript library, d3.js for visualizing heatmaps. Unemployment rate by county, August 2016. Data: Bureau of Labor Statistics.</td>
+									</tr>
+
+									<tr>
+									    <th class="theme-bg-light"><a class="theme-link" href="http://hijiangtao.github.io/ss-vis-component/">Vis System</a></th>
+									    <td>VIS components for a security system, to monitor the state and confirm the system's health running. All codes were wrote based on D3.js version 3.x.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->						
+						
+						
+						
+					</section><!--//section-->
+					<section class="docs-section" id="technicalresources">
+						<h2 class="section-heading">Technical Resources</h2>
+						<h1>
+							<a href="https://d3js.org/"><img src="assets/images/d3.png" style="height:50px; width:50px;"></a>
+							<a href="https://html.spec.whatwg.org/multipage/"><i class="fab fa-html5"></i></a>
+							<a href="https://www.w3.org/Style/CSS/specs.en.html"><i class="fab fa-css3-alt"></i></a>
+							<a href="https://w3schools.com/js/"><i class="fab fa-js-square"></i></a>
+							<a href="https://getbootstrap.com/"><i class="fab fa-bootstrap"></i></a>
+						</h1>
+					
+					</section><!--//section-->
+					
+					
+			    </article>
+			    
+			    <article class="docs-article" id="software-design">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Software Design</h1>
+				    </header>
+				     <section class="docs-section" id="componentdiagram">
+						<h2 class="section-heading">Architecture/Component Diagram</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="umlclassdiagram">
+						<h2 class="section-heading">UML Class Diagram</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/umlclassdiagram.png" data-title="Sequence Diagram"><img class="figure-img img-fluid shadow rounded" src="assets/images/umlclassdiagram.png" alt="" style="width: 100%;"></a>
+						</figure>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="sequencediagram">
+						<h2 class="section-heading">Sequence Diagram</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/features/sequence.png" data-title="Sequence Diagram"><img class="figure-img img-fluid shadow rounded" src="assets/images/features/sequence.png" alt="" style="width: 100%;"></a>
+						</figure>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="project-management">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Project Management</h1>
+				    </header>
+				     <section class="docs-section" id="projectplan">
+						<h2 class="section-heading">Project Plan</h2>
+						<div class="table-responsive my-4">
+							<h4>Sprint One:</h4>
+							<table class="table table-bordered">
+								<thead>
+								<tr>
+									<th scope="col">Rubric Description</th>
+									<th scope="col">Task To-Do</th>
+									<th scope="col">Assigned To</th>
+									<th scope="col">Date To Complete By</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>Requirements Document</td>
+									<td>Glossary</td>
+									<td>All Members</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Storyboard</td>
+									<td>Dan</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>User Stories</td>
+									<td>All Members, Eenna</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+						
+								<tr>
+									<td>Design Document</td>
+									<td>Component Diagram</td>
+									<td>Dan</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>UML Class Diagram</td>
+									<td>Abenezer</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sequence Diagram</td>
+									<td>Jason</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								<tr>
+									<td>Project Management Document</td>
+									<td>Storymap</td>
+									<td>Eenna</td>
+									<td>Jan 26, 2020</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table-responsive -->
+
+
+
+
+						<div class="table-responsive my-4">
+							<h4>Sprint Two:</h4>
+							<table class="table table-bordered table-dark">
+								<thead>
+								  <tr>
+									<th scope="col">Rubric Description</th>
+									<th scope="col">Task To-Do</th>
+									<th scope="col">Assigned To</th>
+									<th scope="col">Date To Complete By</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>Requirements Document</td>
+									<td>Final Version User Stories</td>
+									<td>All Members</td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td></td>
+									<td>Minimum Viable Prototype Specification</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Design Document</td>
+									<td>Update Design Document</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+						
+								  <tr>
+									<td>Implementation Progress</td>
+									<td>Implementation Progress</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Address Feedback</td>
+									<td>Address Feedback</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Plans For Next Week</td>
+									<td>Update Plan for Sprint 3</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Code Style and Readability</td>
+									<td>Check Over To See If Code Follows Conventions</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Document Refined</td>
+									<td>Re-Evaluate</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>Tasks and Task Assignments</td>
+									<td>Requirements</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+								  <tr>
+									<td>System Runs on Deployment Server</td>
+									<td>Run System on Deployment Server</td>
+									<td></td>
+									<td>Feb 17, 2020</td>
+								  </tr>
+						
+								</tbody>
+							  </table>
+						
+						
+						</div>
+						<!-- //table-responsive -->
+
+						  <div class="table-responsive my-4">
+							<h4>Sprint Three:</h4>
+						<table class="table">
+							<thead>
+							  <tr>
+								<th scope="col">Rubric Description</th>
+								<th scope="col">Task To-Do</th>
+								<th scope="col">Assigned To</th>
+								<th scope="col">Date To Complete By</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>70% Of Requirements</td>
+								<td>Keep Track of How Many Requirements are Done</td>
+								<td>All Members</td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Heatmap Calendar, one patient throughout the day</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Heatmap calendar, health-service zone, throughout the day</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Switch heatmap between province view, city view, region view.</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Heatmap with number of patients per each pain level quartile per institution and Canada.</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Heatmap of mode pain level of patients at a particular time.</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Hover over heatmap with number of patients.</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Line graph, province</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Overlapping bar graph, # of patients by gender, day, pain level.</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Overlapping bar graph, # of patients by gender, time of day, pain level</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Hierarchical bar chart, two levels, health service zone</td>
+								<td></td>
+								<td>Mar 9, 2020</td>
+							  </tr> 
+							  
+							</tbody>
+						  </table>
+						  </div>
+						  <!-- //table-responsive -->
+
+
+
+						  <!-- Sprint Four -->
+						  <div class="table-responsive my-4">
+							<h4>Sprint Four:</h4>
+						<table class="table table-bordered table-dark">
+							<thead>
+							  <tr>
+								<th scope="col">Rubric Description</th>
+								<th scope="col">Task To-Do</th>
+								<th scope="col">Assigned To</th>
+								<th scope="col">Date To Complete By</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>All Requirements Complete</td>
+								<td>Keep Track of How Many Requirements are Done</td>
+								<td>All Members</td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>5 second visualization load, max.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Color Blindness friendly.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Heatmap calendar, day to day, mode of an institution</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Hover over institution on heatmap and see mode pain.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Line graph, health-service zone.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Overlapping graph, pain per each age group.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td></td>
+								<td>Pie charts in calendar format.</td>
+								<td></td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							  <tr>
+								<td>System is Usable</td>
+								<td>All parts of the system work as expected</td>
+								<td>All Members</td>
+								<td>Mar 25, 2020</td>
+							  </tr> 
+							</tbody>
+						  </table>
+						  </div>
+						  <!-- //table-responsive -->
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="storymap">
+						<h2 class="section-heading">Story Map</h2>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/storymap.png" data-title="Sequence Diagram"><img class="figure-img img-fluid shadow rounded" src="assets/images/storymap.png" alt="" style="width: 100%;"></a>
+						</figure>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="userinterface">
+						<h2 class="section-heading">User Interface</h2>
+						<embed src="assets/seperatescreen.pdf" width="100%" height="900px" />
+					</section><!--//section-->
+
+					<section class="docs-section" id="roles">
+						<h2 class="section-heading">Roles</h2>
+						<p>
+							<strong>Heatmap Calendar: </strong> Abenezer B.<br />
+							<strong>Overlapping Bar Graph: </strong><!-- --><br />
+							<strong>Line Graph: </strong><!-- --><br />
+							<strong>Hierarchical Bar Chart: </strong><!-- --><br />
+							<strong>Heat Map: </strong><!-- --><br />
+							
+						</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="requirements">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Requirements</h1>
+				    </header>
+				     <section class="docs-section" id="userstories">
+						<h2 class="section-heading">User Stories</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="musthave">
+						<h2 class="section-heading">Must Have</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="shouldhave">
+						<h2 class="section-heading">Should Have</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="wouldhave">
+						<h2 class="section-heading">Would Have</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="couldhave">
+						<h2 class="section-heading">Could Have</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="https://github.com/UAlberta-CMPUT401/PacslacII-Visualization"><i class="fab fa-github fa-fw"></i></a></li> 
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
