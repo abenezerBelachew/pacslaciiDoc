@@ -76,10 +76,10 @@
 					
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#requirements"><span class="theme-icon-holder mr-2"><i class="fas fa-asterisk fa-fw"></i></span>Requirements</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#userstories">User Stories</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#musthave">Must Have</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#musthave">Must Have</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#shouldhave">Should Have</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#wouldhave">Would Have</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#couldhave">Could Have</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#couldhave">Could Have</a></li> -->
 					
 			    </ul>
 
@@ -745,10 +745,10 @@
 						<h2 class="section-heading">Roles</h2>
 						<p>
 							<strong>Heatmap Calendar: </strong> Abenezer B.<br />
-							<strong>Overlapping Bar Graph: </strong><!-- --><br />
-							<strong>Line Graph: </strong><!-- --><br />
-							<strong>Hierarchical Bar Chart: </strong><!-- --><br />
-							<strong>Heat Map: </strong><!-- --><br />
+							<strong>Overlapping Bar Graph: </strong> Eenna<br />
+							<strong>Line Graph: </strong>Jason<br />
+							<strong>Hierarchical Bar Chart: </strong>Jason<br />
+							<strong>Heat Map: </strong>Dan<br />
 							
 						</p>
 					</section><!--//section-->
@@ -758,211 +758,214 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Requirements</h1>
 				    </header>
-				     <section class="docs-section" id="userstories">
+				     <sectioMn class="docs-section" id="userstories">
 						<h2 class="section-heading">User Stories</h2>
-							<!-- UserStories Start -->
-							<ol type="number">      
-								<li><strong>As a user,  I want to see a heatmap detailing average pain level of patients at a particular time, so that I can look for patterns.
+							<!--  -->
+													<!-- UserStories Start -->
+						<ol type="number">      
+							<li><strong>As a user,  I want to see a heatmap detailing average pain level of patients at a particular time, so that I can look for patterns.
+							</strong><br />&emsp; Acceptance Tests:
+							Heatmap loads on the screen.
+							Map loads according to the correct average values for regions.
+							Has instructions how to read it.
+							<li><strong>As a user,  I want to hover over a region on a heatmap so that I may see average numeric pain scores for that region.
+							</strong><br />&emsp; Acceptance Tests:
+							The screen responds on hover within a second.
+							The correct average pain score is displayed for a region.
+							<li><strong>As a user,  I want to use a slider on a heatmap so that I may see how the pain scores change over time.
+							  </strong><br />&emsp; Acceptance Tests:
+							The slider moves in response to the user mouse.
+							The heatmap changes with slider movement.
+							The range for the slider is an accurate representation of the ‘date’ data available.
+							<li><strong>As a user,  I want to switch the heatmap between province view, city view, and region view so that I may see how they compare. 
+							</strong><br />&emsp; Acceptance Tests:
+							Indicator with available view options is evident.
+							The map displays province view if the province view is selected. Similar for every other view offered.
+							The map zooms into the selected region.
+							<li><strong>As a user,  I want to see a heatmap detailing the pain level mode of patients at a particular time so that I may know at what pain-level most patients are at any point in time.
+							</strong><br />&emsp; Acceptance Tests:
+							The correct mode “heat” level is displayed.
+							The time of the displayed map is clearly displayed on the screen.
+							The map shows the country.
+							<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the mode pain score for that institution.
+							</strong><br />&emsp; Acceptance Tests:
+							The map responds to hover.
+							Institutions are obvious on the screen (as pins, or circles).
+							The correct mode is displayed.
+							<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the number of patients in that institution.
+							</strong><br />&emsp; Acceptance Tests:
+							The map responds to hover.
+							The correct number of patients is displayed.
+							<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), time of day assessed (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
+							  </strong><br />&emsp; Acceptance Tests:
+							The colours of the bar graph are different but complement each other.
+							The axes are clearly labeled.
+							The correct values are displayed for the columns, testing maybe only two.
+							No values overlapping over each other anywhere.
+							Has a title.
+							Has a legend.
+							Has instructions on how to read it.
+							Loads on the screen.
+							<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), day (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
+							</strong><br />&emsp; Acceptance Tests:
+							The graph is nice to look at.
+							Has nice colour overlap.
+							The correct values are displayed for each column.
+							Axis values aren’t overlapping each other.
+							Has a title.
+							Has a legend.
+							Has instructions on how to read it.
+							<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), month (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
+							</strong><br />&emsp; Acceptance Tests:
+							Graph is nice to look at.
+							Has nice colour overlap.
+							The correct values are displayed for each column.
+							Axis values aren’t overlapping.
+							Has a title.
+							Has a legend.
+							Has instructions on how to read it.
+							<li><strong>As a user,  I want to interact with the overlapping bar-graph by pressing the left and right keys OR using a slider so that I may see more data.
+							  </strong><br />&emsp; Acceptance Tests:
+							The graph responds to key presses.
+							The graph has a slider.
+							The graph responds to slider movement.
+							As a colourblind user, I want to see all the colours on any of the visualizations.
+							</strong><br />&emsp; Acceptance Tests:
+							All visualizations use a colourblind friendly colour palette. 
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the pain level of one patient day by day so that I may see how the pain level of a patient changed over time.
+							</strong><br />&emsp; Acceptance Tests:
+							The calendar loads. 
+							The correct colours are displayed for each day.
+							Legend for what the colours mean.
+							Has a title.
+							<li><strong>As a user,  I want to see a heatmap calendars depicting the pain level of one patient month by month so that I can see how the pain level changed over a different time granularity.
+							  </strong><br />&emsp; Acceptance Tests:
+							The calendars load and display consecutively one after the other.
+							Has a title, and a legend for what the colours mean.
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of one patient throughout a day so that I can see how the pain level changed over another time granularity.
+							  </strong><br />&emsp; Acceptance Tests:
+							Data is displayed in a concise way.
+							Has a title and colour legend.
+							The correct colours are displayed for their respective values.
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in an institution throughout a day so that I may see what the overall pain level change for this group of patients.
+							  </strong><br />&emsp; Acceptance Tests:
+							The average calculated correctly.
+							Data is grouped properly.
+							The colours correspond their numeric values.
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in a health-service zone throughout a day so that I can see the overall pain level change in this group of patients.
+							</strong><br />&emsp; Acceptance Tests:
+							The average calculated correctly.
+							Data is grouped properly.
+							Axes clearly labeled.
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of one patient throughout a day so I may see what pain level a patient is most often at throughout the day.
+							</strong><br />&emsp; Acceptance Tests:
+							The mode is calculated correctly.
+							Colour legend.
+							Title.
+							<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of patients day to day of an institution so that I may see what level patients of an institution are most often at.
+							  </strong><br />&emsp; Acceptance Tests:
+							The correct mode is calculated.
+							Only the values of an institution are calculated.
+							<li><strong>As a user,  I want to see a heatmap that shows the number of patients per each pain-level quartile in each institution and overall Canada so that I may see aggregate data.
 								</strong><br />&emsp; Acceptance Tests:
-								Heatmap loads on the screen.
-								Map loads according to the correct average values for regions.
-								Has instructions how to read it.
-								<li><strong>As a user,  I want to hover over a region on a heatmap so that I may see average numeric pain scores for that region.
+							The quartiles are grouped appropriately.
+							The correct number is displayed.
+							<li><strong>As a user,  I want to see pie-charts in a calendar format of patients improving/deteriorating (as indicated with a regression line over their measurements) over time at an institution so that I may see an overview of all patients improving/deteriorating within a time period.
+							  </strong><br />&emsp; Acceptance Tests:
+							Pie charts have complementary colours.
+							The calendar loads.
+							<li><strong>As a user,  I want to see an overlapping graph detailing the levels of pain so that I may see the distribution of pain levels across age groups.
+							  </strong><br />&emsp; Acceptance Tests:
+							The data for the groups is accurate.
+							The graph colours are well chosen for visibility.
+							The axes are good scaled.
+							Has colour legend.
+							<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a health-service zone where each bar is coloured by pain level mode so that I may explore indicators of all patients.
+							  </strong><br />&emsp; Acceptance Tests:
+							Accurate data. 
+							Axes clearly labeled.
+							Has title.
+							<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a health-service zone so that I may continue to explore the indicators of all patients in an institution. 
+							  </strong><br />&emsp; Acceptance Tests:
+							Accurate data.
+							<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a province where each bar is coloured by pain level mode so that I can explore indicators of all patients in a province.
+							  </strong><br />&emsp; Acceptance Tests:
+							Accurate data. 
+							Axes clearly labeled.
+							Has title.
+							<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a province so that I may see any general trends that may be happening. 
 								</strong><br />&emsp; Acceptance Tests:
-								The screen responds on hover within a second.
-								The correct average pain score is displayed for a region.
-								<li><strong>As a user,  I want to use a slider on a heatmap so that I may see how the pain scores change over time.
-								  </strong><br />&emsp; Acceptance Tests:
-								The slider moves in response to the user mouse.
-								The heatmap changes with slider movement.
-								The range for the slider is an accurate representation of the ‘date’ data available.
-								<li><strong>As a user,  I want to switch the heatmap between province view, city view, and region view so that I may see how they compare. 
-								</strong><br />&emsp; Acceptance Tests:
-								Indicator with available view options is evident.
-								The map displays province view if the province view is selected. Similar for every other view offered.
-								The map zooms into the selected region.
-								<li><strong>As a user,  I want to see a heatmap detailing the pain level mode of patients at a particular time so that I may know at what pain-level most patients are at any point in time.
-								</strong><br />&emsp; Acceptance Tests:
-								The correct mode “heat” level is displayed.
-								The time of the displayed map is clearly displayed on the screen.
-								The map shows the country.
-								<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the mode pain score for that institution.
-								</strong><br />&emsp; Acceptance Tests:
-								The map responds to hover.
-								Institutions are obvious on the screen (as pins, or circles).
-								The correct mode is displayed.
-								<li><strong>As a user,  I want to hover over an institution on a heatmap so that I may see the number of patients in that institution.
-								</strong><br />&emsp; Acceptance Tests:
-								The map responds to hover.
-								The correct number of patients is displayed.
-								<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), time of day assessed (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-								  </strong><br />&emsp; Acceptance Tests:
-								The colours of the bar graph are different but complement each other.
-								The axes are clearly labeled.
-								The correct values are displayed for the columns, testing maybe only two.
-								No values overlapping over each other anywhere.
-								Has a title.
-								Has a legend.
-								Has instructions on how to read it.
-								Loads on the screen.
-								<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), day (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-								</strong><br />&emsp; Acceptance Tests:
-								The graph is nice to look at.
-								Has nice colour overlap.
-								The correct values are displayed for each column.
-								Axis values aren’t overlapping each other.
-								Has a title.
-								Has a legend.
-								Has instructions on how to read it.
-								<li><strong>As a user,  I want to see an overlapping bar-graph on the number of patients by registered gender (colour), month (bottom/adjustable) and pain levels (bottom) so that I may see the distribution of men/women at different pain levels over time.
-								</strong><br />&emsp; Acceptance Tests:
-								Graph is nice to look at.
-								Has nice colour overlap.
-								The correct values are displayed for each column.
-								Axis values aren’t overlapping.
-								Has a title.
-								Has a legend.
-								Has instructions on how to read it.
-								<li><strong>As a user,  I want to interact with the overlapping bar-graph by pressing the left and right keys OR using a slider so that I may see more data.
-								  </strong><br />&emsp; Acceptance Tests:
-								The graph responds to key presses.
-								The graph has a slider.
-								The graph responds to slider movement.
-								As a colourblind user, I want to see all the colours on any of the visualizations.
-								</strong><br />&emsp; Acceptance Tests:
-								All visualizations use a colourblind friendly colour palette. 
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the pain level of one patient day by day so that I may see how the pain level of a patient changed over time.
-								</strong><br />&emsp; Acceptance Tests:
-								The calendar loads. 
-								The correct colours are displayed for each day.
-								Legend for what the colours mean.
-								Has a title.
-								<li><strong>As a user,  I want to see a heatmap calendars depicting the pain level of one patient month by month so that I can see how the pain level changed over a different time granularity.
-								  </strong><br />&emsp; Acceptance Tests:
-								The calendars load and display consecutively one after the other.
-								Has a title, and a legend for what the colours mean.
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of one patient throughout a day so that I can see how the pain level changed over another time granularity.
-								  </strong><br />&emsp; Acceptance Tests:
-								Data is displayed in a concise way.
-								Has a title and colour legend.
-								The correct colours are displayed for their respective values.
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in an institution throughout a day so that I may see what the overall pain level change for this group of patients.
-								  </strong><br />&emsp; Acceptance Tests:
-								The average calculated correctly.
-								Data is grouped properly.
-								The colours correspond their numeric values.
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the average pain level of patients in a health-service zone throughout a day so that I can see the overall pain level change in this group of patients.
-								</strong><br />&emsp; Acceptance Tests:
-								The average calculated correctly.
-								Data is grouped properly.
-								Axes clearly labeled.
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of one patient throughout a day so I may see what pain level a patient is most often at throughout the day.
-								</strong><br />&emsp; Acceptance Tests:
-								The mode is calculated correctly.
-								Colour legend.
-								Title.
-								<li><strong>As a user,  I want to see a heatmap calendar depicting the mode pain level of patients day to day of an institution so that I may see what level patients of an institution are most often at.
-								  </strong><br />&emsp; Acceptance Tests:
-								The correct mode is calculated.
-								Only the values of an institution are calculated.
-								<li><strong>As a user,  I want to see a heatmap that shows the number of patients per each pain-level quartile in each institution and overall Canada so that I may see aggregate data.
-									</strong><br />&emsp; Acceptance Tests:
-								The quartiles are grouped appropriately.
-								The correct number is displayed.
-								<li><strong>As a user,  I want to see pie-charts in a calendar format of patients improving/deteriorating (as indicated with a regression line over their measurements) over time at an institution so that I may see an overview of all patients improving/deteriorating within a time period.
-								  </strong><br />&emsp; Acceptance Tests:
-								Pie charts have complementary colours.
-								The calendar loads.
-								<li><strong>As a user,  I want to see an overlapping graph detailing the levels of pain so that I may see the distribution of pain levels across age groups.
-								  </strong><br />&emsp; Acceptance Tests:
-								The data for the groups is accurate.
-								The graph colours are well chosen for visibility.
-								The axes are good scaled.
-								Has colour legend.
-								<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a health-service zone where each bar is coloured by pain level mode so that I may explore indicators of all patients.
-								  </strong><br />&emsp; Acceptance Tests:
-								Accurate data. 
-								Axes clearly labeled.
-								Has title.
-								<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a health-service zone so that I may continue to explore the indicators of all patients in an institution. 
-								  </strong><br />&emsp; Acceptance Tests:
-								Accurate data.
-								<li><strong>As a user,  I want to see a hierarchical bar chart where the first level is the number of patients in every institution within a province where each bar is coloured by pain level mode so that I can explore indicators of all patients in a province.
-								  </strong><br />&emsp; Acceptance Tests:
-								Accurate data. 
-								Axes clearly labeled.
-								Has title.
-								<li><strong>As a user,  I want to see a hierarchical bar chart where the second level is the number of patients per each pain-level quartile in an institution within a province so that I may see any general trends that may be happening. 
-									</strong><br />&emsp; Acceptance Tests:
-								Displays accurate data.
-								The colours are appropriate.
-								<li><strong>As a user,  I want to see a line graph of each patient’s improvement/deterioration so that I may see any possible trends.
-								  </strong><br />&emsp; Acceptance Tests:
-								Displays accurate data.
-								Every aspect is clearly visible.
-								Axes are accurate and not misleading.
-								The graph loads.
-								<li><strong>As a user,  I want to see a line graph of each institution’s improvement/deterioration so that I can see any trends if they’re happening.
-								</strong><br />&emsp; Acceptance Tests:
-								Displays accurate data.
-								The graph loads.
-								<li><strong>As a user,  I want to see a line graph of each province’s improvement/deterioration so that I may see how a province is doing.
-								  </strong><br />&emsp; Acceptance Tests:
-								Displays accurate data.
-								The graph loads.
-								<li><strong>As a user,  I want to see a line graph of each health-zone’s improvement/deterioration so that I may evaluate how the health-zone is doing.
-								  </strong><br />&emsp; Acceptance Tests:
-								Displays accurate data.
-								The graph loads.
-								<li><strong>As a user,  I want the UI to be intuitive to use, following general principles of navigation so that I don’t have to spend lots of time learning to interact with it
-								  </strong><br />&emsp; Acceptance Tests:
-								The navigation is on the left.
-								Clicking on a button will change the page to load the visualization.
-								<li><strong>As a user,  I want the visualizations to load within 5 seconds so that I may have a good experience.
-								  </strong><br />&emsp; Acceptance Tests:
-								Visualizations load within 5 seconds.
-								Able to navigate mid load.
-								If a user changes his mind about viewing a certain visualization, the system loads the new visualization rather than the old one.
-								<li><strong>As a user,  I want to follow the 3-click rule to get to any visualization, so that I don’t get lost on the webpage.
-								</strong><br />&emsp; Acceptance Tests:
-								Follows the 3-click rule.
-								As a developer, I want to integrate a front-end React framework with a django back-end.
-								  </strong><br />&emsp; Acceptance Tests:
-								Uses Django back-end.
-								Uses React.
-								As a developer, I want the visualizations mobile-friendly so that users get the best experience.
-								  </strong><br />&emsp; Acceptance Tests:
-								Each visualization looks good on mobile.
-								Can interact with each visualization on mobile.
-								<li><strong>As a user,  I want to be able to register a new account with an email and a password, so that I may log in.
-								</strong><br />&emsp; Acceptance Tests:
-								The password is a strong password.
-								Trying to log in with an unregistered password returns an error.
-							  
-								</ol>
-							<!-- End UserStories Start -->
-					</section><!--//section-->
+							Displays accurate data.
+							The colours are appropriate.
+							<li><strong>As a user,  I want to see a line graph of each patient’s improvement/deterioration so that I may see any possible trends.
+							  </strong><br />&emsp; Acceptance Tests:
+							Displays accurate data.
+							Every aspect is clearly visible.
+							Axes are accurate and not misleading.
+							The graph loads.
+							<li><strong>As a user,  I want to see a line graph of each institution’s improvement/deterioration so that I can see any trends if they’re happening.
+							</strong><br />&emsp; Acceptance Tests:
+							Displays accurate data.
+							The graph loads.
+							<li><strong>As a user,  I want to see a line graph of each province’s improvement/deterioration so that I may see how a province is doing.
+							  </strong><br />&emsp; Acceptance Tests:
+							Displays accurate data.
+							The graph loads.
+							<li><strong>As a user,  I want to see a line graph of each health-zone’s improvement/deterioration so that I may evaluate how the health-zone is doing.
+							  </strong><br />&emsp; Acceptance Tests:
+							Displays accurate data.
+							The graph loads.
+							<li><strong>As a user,  I want the UI to be intuitive to use, following general principles of navigation so that I don’t have to spend lots of time learning to interact with it
+							  </strong><br />&emsp; Acceptance Tests:
+							The navigation is on the left.
+							Clicking on a button will change the page to load the visualization.
+							<li><strong>As a user,  I want the visualizations to load within 5 seconds so that I may have a good experience.
+							  </strong><br />&emsp; Acceptance Tests:
+							Visualizations load within 5 seconds.
+							Able to navigate mid load.
+							If a user changes his mind about viewing a certain visualization, the system loads the new visualization rather than the old one.
+							<li><strong>As a user,  I want to follow the 3-click rule to get to any visualization, so that I don’t get lost on the webpage.
+							</strong><br />&emsp; Acceptance Tests:
+							Follows the 3-click rule.
+							As a developer, I want to integrate a front-end React framework with a django back-end.
+							  </strong><br />&emsp; Acceptance Tests:
+							Uses Django back-end.
+							Uses React.
+							As a developer, I want the visualizations mobile-friendly so that users get the best experience.
+							  </strong><br />&emsp; Acceptance Tests:
+							Each visualization looks good on mobile.
+							Can interact with each visualization on mobile.
+							<li><strong>As a user,  I want to be able to register a new account with an email and a password, so that I may log in.
+							</strong><br />&emsp; Acceptance Tests:
+							The password is a strong password.
+							Trying to log in with an unregistered password returns an error.
+						  
+							</ol>
+
+
+						<!-- End UserStories  -->
+					<!-- </sectioMn>//section -->
 					
-					<section class="docs-section" id="musthave">
+					<!-- <section class="docs-section" id="musthave">
 						<h2 class="section-heading">Must Have</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p> -->
+					<!-- </section>//section -->
 					
-					<section class="docs-section" id="shouldhave">
+					<!-- <section class="docs-section" id="shouldhave">
 						<h2 class="section-heading">Should Have</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p> -->
+					<!-- </section>//section -->
 
-					<section class="docs-section" id="wouldhave">
+					<!-- <section class="docs-section" id="wouldhave">
 						<h2 class="section-heading">Would Have</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p> -->
+					<!-- </section>//section -->
 
-					<section class="docs-section" id="couldhave">
+					<!-- <section class="docs-section" id="couldhave">
 						<h2 class="section-heading">Could Have</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p> -->
+					<!-- </section>//section -->
+			    <!-- </article>//docs-article -->
 			    
 			    
 			    <footer class="footer">
